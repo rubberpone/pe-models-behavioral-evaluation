@@ -1,0 +1,27 @@
+# Data, predictions, results (large / not published)
+data/*
+!data/.gitkeep
+!data/README.md
+
+# Model checkpoints and binary assets (fetch from official sources)
+*.pth
+*.pt
+*.onnx
+*.ckpt
+*.safetensors
+*.hdf5
+*.h5
+*.npy
+# label map (not a checkpoint), required to run PESTO
+!predictors/PESTO/label_to_hz.npy
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+
+# OS / editor
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
